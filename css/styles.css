@@ -283,7 +283,6 @@ button {
     line-height: 42px;
     text-align: center;
     letter-spacing: 0.03em;
-    padding: 50px 0;
 }
 
 .work-fotos {
@@ -607,7 +606,7 @@ button {
     padding: 20px 24px;
 }
 
-/* PORTFLIO PAGE */
+/* PORTFLIO PAGE
 /* Work filter */
 .porffolio-filter {
     display: flex;
@@ -643,6 +642,8 @@ button {
     background-color: var(--accent-color);
     color: var(--white-color);
 }
+
+*/
 
 /* Work-cards */
 .work-card {
