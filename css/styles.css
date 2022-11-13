@@ -147,12 +147,23 @@ button {
     align-items: center;
 }
 
+.site-nav-link:hover,
+.site-nav-link:focus {
+    color: var(--accent-color);
+}
+
+.auth-nav-link:focus,
+.auth-nav-link:hover {
+    color: var(--accent-color);
+}
+
 .auth-nav-link:hover .btn-mail,
 .auth-nav-link:focus .btn-mail,
 .auth-nav-link:hover .btn-phone,
 .auth-nav-link:focus .btn-phone {
     fill: var(--accent-color);
 }
+
 
 .site-nav-item .active {
     color: var(--accent-color);
@@ -186,11 +197,12 @@ button {
 
 /* Hero */
 .hero {
-    background-color: rgba(47, 48, 58, 1);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imagnes/Imghero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1600px 600px;
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: url(../imagnes/Imghero.jpg);
-    background-size: cover;
 }
 
 .hero-title {
@@ -246,15 +258,15 @@ button {
 }
 
 .feature-iconbox {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: #f5f4fa;
     width: 270px;
     height: 120px;
     border-radius: 4px;
     margin-bottom: 30px;
     text-align: center;
-    padding-top: 25px;
-    padding-bottom: 25px;
 }
 
 .feature-list .title {
@@ -347,7 +359,7 @@ button {
     align-items: center;
     justify-content: center;
     gap: 10px;
-    margin-top: 30px;
+    margin-top: 16px;
 }
 
 .social-items-link {
@@ -380,13 +392,13 @@ button {
 }
 
 .client-link {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 170px;
     height: 92px;
     border: 1px solid #afb1b8;
     border-radius: 4px;
-    padding: 16px 32px;
-    gap: 30px;
 }
 
 .client-link:hover .client-logo,
@@ -447,6 +459,7 @@ button {
     color: var(--white-color);
 }
 
+.footer-adress,
 .footer-list {
     display: block;
     color: var(--white-color);
@@ -487,17 +500,6 @@ button {
     align-items: center;
 }
 
-.footer-social-item {
-    background-color: rgba(255, 255, 255, 0.1);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    text-align: center;
-    padding: 12px;
-}
 
 .footer-social-link {
     display: flex;
@@ -508,7 +510,6 @@ button {
     height: 44px;
     border-radius: 50%;
     text-align: center;
-    padding: 12px;
 }
 
 .footer-social-item:not(:last-child) {
